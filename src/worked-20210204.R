@@ -3,7 +3,7 @@
 
 # Step 1: FASTA to df
 require(seqinr)
-t <- read.fasta(file = "~/Documents/projects/MSc_project/covid19_longreadseq_analysis/Assignment/trial.fa")
+t <- read.fasta(file = "~/OneDrive - Kemri Wellcome Trust/variants-highlighter/data/dummy-data-02-20210204.fa")
 tabl <- data.frame(seq_name = names(t), seqs = unlist(getSequence(t, as.string = T)))
 tabl
 
