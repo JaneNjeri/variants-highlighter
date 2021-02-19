@@ -1,11 +1,13 @@
->Test1
+>sample1
 ACGTTAGTCGTC
->Test2
+>sample2
 A-GTT-GTCACG
->Test3
+>sample3
 ACGTTGGTCATC
->Test3_ref
+>sample4
 ACGTAAGCGACG
+
+
 
 
 
