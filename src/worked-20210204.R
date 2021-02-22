@@ -33,11 +33,16 @@ compare %>%
   rownames_to_column("seqs_name") %>%
   pivot_longer(-c(seqs_name), names_to = "Sites", values_to = "values") %>%
   ggplot(aes(x = Sites, y = seqs_name, fill = values)) +
-  geom_raster() + 
-  geom_text(aes(label = values), color = "white") +
-  scale_fill_gradient(low = "hotpink4", high = "gray18") +
-  scale_color_gradient(low = "hotpink4", high = "gray18")
-
+  geom_tile() + 
+  #geom_text(aes(label = values), color = "white") +
+  scale_fill_gradient(low = '#f4a582', high = '#252525') +
+  scale_color_gradient(low = '#f4a582', high = '#252525') +
+  theme_bw() +
+  xlab('sites') +
+  ylab('sequences') 
+ 
+  
+#'#ca0020','#f4a582','#f7f7f7','#92c5de', '#4393c3', '#2166ac','#252525'
 
 #==============================================================================
 
