@@ -9,4 +9,30 @@
 .DS_Store?
 ._*
 .Trashes
+
+
+# R stuff
 .Rhistory
+
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+
+# snake files
+.snakemake
+
+
+# pyenv
+.python-version
+
+
+# virtualenv
+.venv
+venv/
+ENV/
+
+
+# large files 
+
+
